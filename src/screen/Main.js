@@ -15,6 +15,15 @@ export default class Main extends Component {
                 <View
                     style={{flex: 1, padding: 5}}>
                     <Button
+                        onPress={(() => Main.onPressButton(navigator, 'News'))}
+                        title="News"
+                        accessibilityLabel="News"
+                    />
+
+                </View>
+                <View
+                    style={{flex: 1, padding: 5}}>
+                    <Button
                         onPress={(() => Main.onPressButton(navigator, 'ActivityIndicator'))}
                         title="Activity indicator"
                         accessibilityLabel="Activity indicator"

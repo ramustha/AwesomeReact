@@ -12,9 +12,13 @@ import TextInput from './src/component/TextInput'
 import Toolbar from './src/component/Toolbar'
 import ViewPager from './src/component/ViewPager'
 import WebView from './src/component/WebView'
+import News from './src/sample/News'
+import NewsDetail from './src/sample/NewsDetail'
 
 const App = StackNavigator({
     MainScreen: {screen: Main},
+    News: {screen: News},
+    NewsDetail: {screen: NewsDetail},
     ActivityIndicator: {screen: ActivityIndicator},
     Button: {screen: Button},
     DrawerLayout: {screen: DrawerLayout},
