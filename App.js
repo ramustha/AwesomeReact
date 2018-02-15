@@ -14,6 +14,7 @@ import ViewPager from './src/component/ViewPager'
 import WebView from './src/component/WebView'
 import News from './src/sample/News'
 import NewsDetail from './src/sample/NewsDetail'
+import StaticMap from './src/maps/StaticMap'
 
 const App = StackNavigator({
     MainScreen: {screen: Main},
@@ -30,5 +31,6 @@ const App = StackNavigator({
     Toolbar: {screen: Toolbar},
     ViewPager: {screen: ViewPager},
     WebView: {screen: WebView},
+    StaticMap: {screen: StaticMap},
 });
 export default App;

@@ -1,5 +1,6 @@
 import React, {Component} from "react";
 import {Button, ScrollView, View} from "react-native";
+import StaticMap from "../maps/StaticMap";
 
 export default class Main extends Component {
     static navigationOptions = {
@@ -108,6 +109,14 @@ export default class Main extends Component {
                         onPress={(() => Main.onPressButton(navigator, 'WebView'))}
                         title="WebView"
                         accessibilityLabel="WebView"
+                    />
+                </View>
+                <View
+                    style={{flex: 1, padding: 5}}>
+                    <Button
+                        onPress={(() => Main.onPressButton(navigator, 'StaticMap'))}
+                        title="StaticMap"
+                        accessibilityLabel="StaticMap"
                     />
                 </View>
             </ScrollView>
